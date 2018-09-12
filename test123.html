@@ -1,0 +1,62 @@
+<html>
+	<head><title> Test </title>
+	</head>
+<body>
+
+<?php if(isset($_POST["submit"])){ ?>
+
+<div class="contact"><fieldset class="contact-inner">
+<p align="center" style="font-size:20px">Successfully Submited</p><br>
+
+	<p class = "contact-input">
+		Plan Name <?php echo $_POST['planname']; ?>
+	</p>
+	<p class="contact-input">
+		Monthly Rental <?php echo $_POST["monthlyrental"];?>
+	</p>
+	<p class="contact-input">
+		Free Internet <?php echo $_POST["freeinternet"];?>
+	</p>
+	<p class="contact-input">
+		Free Calls <?php echo $_POST["freecalls"];?>
+	</p>
+	<p class="contact-input">
+		Free SMSs <?php echo $_POST["freesms"];?>
+	</p>
+	<p class="contact-input">
+		Call Charges <?php echo $_POST["callcharges"];?>
+	</p>
+	<p class="contact-input">
+		SMS Charges <?php echo $_POST["smscharges"];?>
+	</p>
+	<p class="contact-input">
+		Data Charges <?php echo $_POST["datacharges"];?>
+	</p>
+	<p class="contact-input">
+		Roaming Charges <?php echo $_POST["roamingcharges"];?>
+	</p>
+
+</fieldset></div>
+<?php } else{ ?>
+
+
+
+		<form action = "" method = "post">
+			Plan Name	 <input type = "text" name = "planname"> <br><br>
+			Monthly Rental 	 <input type = "text" name = "monthlyrental"> <br><br>
+			Free Internet 	 <input type = "text" name = "freeinternet"> <br><br>
+			Free Calls 	 <input type = "text" name = "freecalls"> <br><br>
+			Free SMSs 	 <input type = "text" name = "freesmss"> <br><br>
+			Call Charges 	 <input type = "text" name = "callcharges"> <br><br>
+			SMS Charges 	 <input type = "text" name = "smscharges"> <br><br>
+			Data Charges 	 <input type = "text" name = "datacharges"> <br><br>
+			Roaming Charges  <input type = "text" name = "roamingcharges"> <br><br>
+
+			<input type = "submit">
+		</form>	
+
+<?php } ?>	
+</body>
+</html>
+		
+		
